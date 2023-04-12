@@ -11,10 +11,10 @@ export function generateColor() {
   let color = '#' + Math.floor(Math.random() * 16777215).toString(16)
   return color;
   }
-export function Statistics({ stats }) {
+export function Statistics({ title, stats }) {
     return (
       <StatisticsDiv>
-        <Title>Upload stats</Title>
+        <Title>{title}</Title>
         <StatsList>
           {stats.map(item => (
             <StatsItem key={item.id} background-color={generateColor}>
