@@ -8,10 +8,9 @@ import {
   Percentage,
 } from './Statistics.styled';
 export function generateColor() {
-  let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  if(color != '#ffffff'){
-  return color;}
-}
+  let color = '#' + Math.floor(Math.random() * 16777215).toString(16)
+  return color;
+  }
 export function Statistics({ stats }) {
     return (
       <StatisticsDiv>
