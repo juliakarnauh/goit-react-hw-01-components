@@ -14,7 +14,7 @@ export function generateColor() {
 export function Statistics({ title, stats }) {
     return (
       <StatisticsDiv>
-        <Title>{title}</Title>
+        {title && <Title>{title}</Title>}
         <StatsList>
           {stats.map(item => (
             <StatsItem key={item.id} background-color={generateColor}>
